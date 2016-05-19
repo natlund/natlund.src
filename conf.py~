@@ -21,7 +21,7 @@ BLOG_AUTHOR = "Nat Lund"  # (translatable)
 BLOG_TITLE = "Xenos"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://example.com/"
+SITE_URL = "http://natlund.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://example.com/"
@@ -139,7 +139,7 @@ NAVIGATION_LINKS = {
 # THEME = "bootstrap3"
 THEME = "lanyon"
 GLOBAL_CONTEXT = {
-     "lanyon_subtheme": "theme-base-08"
+     "lanyon_subtheme": "theme-base-0c"
 }
 # That changes the color scheme, replace 08 with one of 09, 0a, 0b, 0c, 0d, 0e, 0f.
 

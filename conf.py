@@ -21,7 +21,7 @@ BLOG_AUTHOR = "Nat Lund"  # (translatable)
 BLOG_TITLE = "Xenos"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://example.com/"
+SITE_URL = "http://natlund.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://example.com/"
@@ -546,6 +546,17 @@ REDIRECTIONS = []
 #         "rsync -rav --delete output/ joe@my.site:/srv/www/site",
 #     ]
 # }
+
+DEPLOY_COMMANDS = {
+    'default': [
+        "rsync -a output/ ../natlund.github.io/",
+        "cd ../natlund.github.io",
+        "git add --all",
+        "git commit",
+        "git push",
+    ]
+}
+
 
 # github_deploy configuration
 # For more details, read the manual:
