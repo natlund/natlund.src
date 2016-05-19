@@ -1,0 +1,17 @@
+<p>Write your page here.</p>
+<p>Why the hell is this index page not the one shown on localhost:/8000?
+Why is there another index page in the output folder?
+Why is that other index page served instead?
+How can I replace the automatically-generated index page with my one?</p>
+<p>Okay, after changing to INDEX_PATH=&quot;blog&quot; in conf.py, Nikola now puts the offending index.html page away in the blog folder.
+However, the index page that I want to be the home page is still not in the root of the output folder, so is not served.</p>
+<p>Okay, fixed.</p>
+<p>The home page of any website seems to be index.html.  So you need an index.html in the root directory of the output folder.</p>
+<p>I created a 'home' subfolder in the stories folder.
+The conf.py file has a PAGES = ( (a bunch of tuples) ) line.
+I added (&quot;stories/home/<a href="#id1"><span class="problematic" id="id2">*</span></a>.rst&quot;, &quot;&quot;, &quot;stories.tmpl&quot;) to that line.
+This makes .rst files in the home folder be processed and end up in the &quot;&quot; folder, ie. in the root of the output folder.</p>
+<div class="system-message" id="id1">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 15); <em><a href="#id2">backlink</a></em></p>
+Inline emphasis start-string without end-string.</div>
+<p>Now it works.</p>

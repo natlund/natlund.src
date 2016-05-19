@@ -1,0 +1,16 @@
+.. title: Welcome to my workbook
+.. slug: index
+.. date: 2016-04-21 14:52:58 UTC+01:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+
+Write your page here.
+
+Why the hell is this index page not the one shown on localhost:/8000?
+Why is there another index page in the output folder?
+Why is that other index page served instead?
+How can I replace the automatically-generated index page with my one?
+
