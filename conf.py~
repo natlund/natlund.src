@@ -547,6 +547,17 @@ REDIRECTIONS = []
 #     ]
 # }
 
+DEPLOY_COMMANDS = {
+    'default': [
+        "rsync -a output/ ../natlund.github.io/",
+        "cd ../natlund.github.io",
+        "git add --all",
+        "git commit",
+        "git push",
+    ]
+}
+
+
 # github_deploy configuration
 # For more details, read the manual:
 # https://getnikola.com/handbook.html#deploying-to-github

@@ -137,10 +137,11 @@ NAVIGATION_LINKS = {
 
 # Name of the theme to use.
 # THEME = "bootstrap3"
-THEME = "lanyon"
-GLOBAL_CONTEXT = {
-     "lanyon_subtheme": "theme-base-0c"
-}
+THEME = "spartan"
+# THEME = "lanyon"
+# GLOBAL_CONTEXT = {
+#     "lanyon_subtheme": "theme-base-0c"
+# }
 # That changes the color scheme, replace 08 with one of 09, 0a, 0b, 0c, 0d, 0e, 0f.
 
 # Primary color of your theme. This will be used to customize your theme and
